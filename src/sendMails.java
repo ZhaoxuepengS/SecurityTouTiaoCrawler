@@ -24,7 +24,7 @@ public class sendMails {
         //smtp登陆的账号、密码 ；需开启smtp登陆
         props.put("mail.user", "495149700@qq.com");
         // 访问SMTP服务时需要提供的密码,不是邮箱登陆密码，一般都有独立smtp的登陆密码
-        props.put("mail.password", "XXXXX");
+        props.put("mail.password", "sfletzinvplfbije");
         
         // 构建授权信息，用于进行SMTP进行身份验证
         Authenticator authenticator = new Authenticator() {
@@ -51,9 +51,9 @@ public class sendMails {
             InternetAddress to = new InternetAddress(mailAdr);
             message.setRecipient(RecipientType.TO, to);
             
-            // 设置抄送
-            //InternetAddress cc = new InternetAddress("luo_aaaaa@yeah.net");
-            //message.setRecipient(RecipientType.CC, cc);
+             //设置抄送
+            InternetAddress cc = new InternetAddress("zhaoxuepeng@uniview.com");
+            message.setRecipient(RecipientType.CC, cc);
 
             // 设置密送，其他的收件人不能看到密送的邮件地址
             //InternetAddress bcc = new InternetAddress("aaaaa@163.com");

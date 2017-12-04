@@ -2,6 +2,7 @@ package cn.uniview.securityCrawler;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -15,6 +16,9 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import com.sun.mail.handlers.image_gif;
+import com.sun.mail.iap.Response;
+
 public class Crawler {
 
 	/**
@@ -23,6 +27,37 @@ public class Crawler {
 	 */
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
+		//String content1 = traceToutiao();
+		String content2 = traceCVE();
+		System.out.println(content2);
+//		String url = "http://cve.mitre.org/cgi-bin/cvename.cgi?name=2017-17096";
+//		Document doc = Jsoup.connect(url).ignoreHttpErrors(true).timeout(100000).get();
+//		Elements s = doc.select("#GeneratedTable > table > tbody > tr:nth-child(4) > td");
+//		System.out.println(s.text());
+	}
+	private static String traceCVE() throws IOException{
+		StringBuffer sb = new StringBuffer();
+		String url = "https://cassandra.cerias.purdue.edu/CVE_changes/today.html";
+		Document doc = Jsoup.connect(url).ignoreHttpErrors(true).timeout(10000).get();
+		Elements s = doc.select("a");
+		for (Element element : s) {
+			String cveNo = element.text();
+			String cveurl = element.attr("href");
+			Document doc2 = Jsoup.connect(cveurl).ignoreHttpErrors(true).timeout(100000).get();
+			Elements s1 = doc2.select("#GeneratedTable > table > tbody > tr:nth-child(4) > td");
+			String description = s1.text();
+			sb.append(cveNo);
+			sb.append("\r\n");
+			sb.append(description);
+			sb.append("\r\n");
+			sb.append("\r\n");
+			sb.append("\r\n");
+		}
+		return sb.toString();
+		 
+	}
+	private static String traceToutiao() throws IOException,
+			FileNotFoundException {
 		String url = "http://toutiao.secjia.com/";
 	
 		Document doc = Jsoup.connect(url).ignoreHttpErrors(true).get();
@@ -97,15 +132,20 @@ loop:	while(i<11){
 		String content = content(artList);
 		fw.close();
 		bfread.close();
+		return content;
 	}
 	public static String content(ArrayList<articles> artList){
 		Iterator<articles> it = artList.iterator();
 		StringBuffer contentbf = new StringBuffer();
 		while(it.hasNext()){
 			articles art = it.next();
-			contentbf.append("<a href=\""+art.gethref()+"\">"+art.getTitle()+"</a>");
+			contentbf.append(art.getTitle());
+			contentbf.append("\r\n");
+			contentbf.append(art.gethref());
 			contentbf.append("\r\n");
 			contentbf.append(art.getarticle());
+			contentbf.append("\r\n");
+			contentbf.append("\r\n");
 			contentbf.append("\r\n");
 		}
 		System.out.println(contentbf.toString());
