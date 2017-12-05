@@ -2,11 +2,27 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="D:/Java/爬虫/commons-codec-1.9.jar"/>
-	<classpathentry kind="lib" path="D:/Java/爬虫/commons-httpclient-3.0-alpha1.jar"/>
-	<classpathentry kind="lib" path="D:/Java/爬虫/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/Java/爬虫/commons-logging-1.2-javadoc.jar"/>
-	<classpathentry kind="lib" path="D:/Java/爬虫/jsoup-1.9.2.jar"/>
-	<classpathentry kind="lib" path="D:/Java/eclipse/workspace/SecurityTouTiaoCrawler/lib/javax.mail-1.6.0.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/commons-httpclient-3.0-alpha1.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/commons-logging-1.2-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/javax.mail-1.6.0.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/jsoup-1.9.2.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/mail.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/javacsv-2.1.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/mysql-connector-java-5.1.10-bin.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/poi-3.17/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/poi-3.17/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/poi-3.17/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/poi-3.17/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/poi-3.17/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/poi-3.17/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/poi-3.17/lib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/poi-3.17/lib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/poi-3.17/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/poi-3.17/lib/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/poi-3.17/ooxml-lib/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="D:/GithubProject/SecurityTouTiaoCrawler/lib/poi-3.17/ooxml-lib/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
